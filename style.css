@@ -1,0 +1,320 @@
+
+/* style.css */
+:root {
+  --maroon: #6e2028;
+  --maroon-dark: #42151b;
+  --gold: #c7a45b;
+  --cream: #fbf7ef;
+  --white: #ffffff;
+  --text: #302b28;
+  --muted: #706761;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  background: var(--cream);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+a {
+  color: inherit;
+}
+
+.navbar {
+  background: var(--maroon-dark);
+  color: white;
+  padding: 16px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.brand {
+  text-decoration: none;
+  font-size: 1.15rem;
+  font-weight: bold;
+  color: #f3d99d;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;
+  color: white;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #f3d99d;
+}
+
+.hero {
+  min-height: 570px;
+  display: flex;
+  align-items: center;
+  padding: 80px 9%;
+  color: white;
+  background:
+    linear-gradient(90deg, rgba(35, 16, 17, 0.86), rgba(35, 16, 17, 0.25)),
+    url("https://commons.wikimedia.org/wiki/Special:FilePath/Jaro%20Cathedral%20%28Catedral%20de%20Jaro%29.jpg")
+    center 45% / cover no-repeat;
+}
+
+.hero-content {
+  max-width: 680px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #f0d394;
+  font: 700 0.8rem Arial, sans-serif;
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  font-size: clamp(2.6rem, 6vw, 4.8rem);
+  line-height: 1.1;
+  margin-bottom: 22px;
+}
+
+.hero p {
+  max-width: 580px;
+  font-size: 1.1rem;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--gold);
+  color: #281a13;
+  padding: 13px 24px;
+  text-decoration: none;
+  border-radius: 3px;
+  margin: 24px 12px 0 0;
+  font: 700 0.9rem Arial, sans-serif;
+}
+
+.btn:hover {
+  background: #e2c77e;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.section {
+  padding: 76px 8%;
+}
+
+.section-heading {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 40px;
+}
+
+.section-heading h2,
+.page-banner h1 {
+  color: var(--maroon);
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.section-heading p,
+.muted {
+  color: var(--muted);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e9dfd1;
+  padding: 28px;
+  border-radius: 5px;
+}
+
+.card h3 {
+  color: var(--maroon);
+  margin-bottom: 12px;
+  font-size: 1.35rem;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 15px;
+  color: var(--maroon);
+  font-weight: bold;
+}
+
+.photo {
+  display: block;
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.page-banner {
+  background: #eee3d2;
+  padding: 65px 8%;
+  text-align: center;
+}
+
+.page-banner p {
+  max-width: 720px;
+  margin: 0 auto;
+  color: var(--muted);
+}
+
+.content {
+  max-width: 1050px;
+  margin: auto;
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 45px;
+}
+
+.two-column img {
+  width: 100%;
+  max-height: 480px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.content h2 {
+  color: var(--maroon);
+  margin: 0 0 18px;
+  font-size: 2rem;
+}
+
+.content p {
+  margin-bottom: 18px;
+}
+
+.timeline {
+  border-left: 3px solid var(--gold);
+  margin: 30px 0 0 10px;
+  padding-left: 28px;
+}
+
+.timeline article {
+  position: relative;
+  margin-bottom: 34px;
+}
+
+.timeline article::before {
+  content: "";
+  width: 13px;
+  height: 13px;
+  background: var(--maroon);
+  border: 3px solid var(--cream);
+  border-radius: 50%;
+  position: absolute;
+  left: -37px;
+  top: 8px;
+}
+
+.timeline h3 {
+  color: var(--maroon);
+  font-size: 1.3rem;
+}
+
+.map-container {
+  overflow: hidden;
+  border-radius: 5px;
+  min-height: 400px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 400px;
+  border: 0;
+}
+
+.notice {
+  background: #f0e6d6;
+  border-left: 4px solid var(--gold);
+  padding: 20px;
+  margin-top: 25px;
+}
+
+footer {
+  background: var(--maroon-dark);
+  color: #eee4d8;
+  text-align: center;
+  padding: 30px 8%;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #f0d394;
+}
+
+.footer-credit {
+  margin-top: 12px;
+  font-size: 0.8rem;
+  color: #d9c9b9;
+}
+
+@media (max-width: 760px) {
+  .navbar {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .nav-links {
+    justify-content: center;
+    gap: 12px 18px;
+  }
+
+  .hero {
+    min-height: 500px;
+    padding: 60px 7%;
+    background-position: center;
+  }
+
+  .cards,
+  .two-column {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 52px 7%;
+  }
+
+  .page-banner {
+    padding: 48px 7%;
+  }
+}

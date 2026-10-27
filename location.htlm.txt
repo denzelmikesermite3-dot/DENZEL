@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Location | Jaro Cathedral</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a class="brand" href="index.html">JARO CATHEDRAL</a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="history.html">History</a>
+      <a class="active" href="location.html">Location</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <h1>Find Jaro Cathedral</h1>
+      <p>
+        Visit a historic religious landmark in the Jaro district
+        of Iloilo City, Philippines.
+      </p>
+    </section>
+
+    <section class="section">
+      <div class="content two-column">
+        <div>
+          <h2>Our Location</h2>
+          <p>
+            <strong>Jaro Metropolitan Cathedral</strong><br>
+            National Shrine of Our Lady of Candles<br>
+            Jaro, Iloilo City, Iloilo, Philippines
+          </p>
+
+          <p>
+            The cathedral is located in the historic Jaro district,
+            near Jaro Plaza and the district's well-known separate
+            bell tower.
+          </p>
+
+          <a class="btn"
+             href="https://www.google.com/maps/search/?api=1&query=Jaro+Metropolitan+Cathedral+Iloilo+City"
+             target="_blank"
+             rel="noopener noreferrer">
+            Open Google Maps
+          </a>
+
+          <div class="notice">
+            <strong>Before you visit</strong>
+            <p>
+              Check locally for current Mass schedules, visiting
+              arrangements, and any restrictions during religious
+              celebrations. Please dress respectfully inside the
+              church.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <img
+            class="photo"
+            style="height:390px"
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Jaro%20Cathedral%20%28Catedral%20de%20Jaro%29.jpg"
+            alt="Jaro Metropolitan Cathedral in Iloilo City">
+
+          <p class="muted">
+            The cathedral is in the Jaro district of Iloilo City,
+            on Panay Island in Western Visayas, Philippines.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background:#eee3d2">
+      <div class="content">
+        <div class="section-heading">
+          <h2>Explore the Map</h2>
+          <p>
+            Use the map to view the cathedral's location and
+            explore nearby streets.
+          </p>
+        </div>
+
+        <div class="map-container">
+          <iframe
+            title="Map showing Jaro Metropolitan Cathedral in Iloilo City"
+            src="https://maps.google.com/maps?q=Jaro%20Metropolitan%20Cathedral%2C%20Iloilo%20City&t=&z=16&ie=UTF8&iwloc=&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Jaro Metropolitan Cathedral | Jaro, Iloilo City, Philippines</p>
+    <p class="footer-credit">
+      Website created as an informational presentation of the
+      cathedral's history, heritage, and location.
+    </p>
+  </footer>
+
+</body>
+</html>
